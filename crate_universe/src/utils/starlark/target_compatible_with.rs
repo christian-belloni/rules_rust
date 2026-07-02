@@ -69,7 +69,7 @@ mod test {
             "@rules_rust//rust/platform:wasm32-unknown-unknown".to_owned(),
             "@rules_rust//rust/platform:wasm32-wasip1".to_owned(),
             "@rules_rust//rust/platform:x86_64-apple-darwin".to_owned(),
-            "@rules_rust//rust/platform:x86_64-pc-windows-msvc".to_owned(),
+            "@rules_rust//rust/platform:x86_64-pc-windows-gnu".to_owned(),
             "@rules_rust//rust/platform:x86_64-unknown-linux-gnu".to_owned(),
         ]));
 
@@ -78,7 +78,7 @@ mod test {
                 "@rules_rust//rust/platform:wasm32-unknown-unknown": [],
                 "@rules_rust//rust/platform:wasm32-wasip1": [],
                 "@rules_rust//rust/platform:x86_64-apple-darwin": [],
-                "@rules_rust//rust/platform:x86_64-pc-windows-msvc": [],
+                "@rules_rust//rust/platform:x86_64-pc-windows-gnu": [],
                 "@rules_rust//rust/platform:x86_64-unknown-linux-gnu": [],
                 "//conditions:default": ["@platforms//:incompatible"],
             })
