@@ -29,7 +29,7 @@ SUPPORTED_T1_PLATFORM_TRIPLES = {
     "i686-pc-windows-msvc": _support(std = True, host_tools = True),
     "i686-unknown-linux-gnu": _support(std = True, host_tools = True),
     "x86_64-apple-darwin": _support(std = True, host_tools = True),
-    "x86_64-pc-windows-msvc": _support(std = True, host_tools = True),
+    "x86_64-pc-windows-gnu": _support(std = True, host_tools = True),
     "x86_64-unknown-linux-gnu": _support(std = True, host_tools = True),
     "x86_64-unknown-nixos-gnu": _support(std = True, host_tools = True),  # Same as `x86_64-unknown-linux-gnu` but with `@platforms//os:nixos`.
     # N.B. These "alternative" envs are not supported, as bazel cannot distinguish between them
@@ -46,7 +46,7 @@ SUPPORTED_T2_PLATFORM_TRIPLES = {
     "aarch64-apple-ios-macabi": _support(std = True, host_tools = False),
     "aarch64-apple-ios-sim": _support(std = True, host_tools = False),
     "aarch64-linux-android": _support(std = True, host_tools = False),
-    "aarch64-pc-windows-msvc": _support(std = True, host_tools = True),
+    "aarch64-pc-windows-gnu": _support(std = True, host_tools = True),
     "aarch64-unknown-fuchsia": _support(std = True, host_tools = False),
     "aarch64-unknown-none": _support(std = True, host_tools = False),
     "aarch64-unknown-uefi": _support(std = True, host_tools = False),
